@@ -1,0 +1,9 @@
+{
+  "gradient": {
+    "speed": 5,
+    "colors": ["#FF0000", "#FFFF00", "#00FF00"]
+  },
+  "admin": {
+    "forceAdminRed": true
+  }
+}
