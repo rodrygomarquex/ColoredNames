@@ -9,4 +9,12 @@ public class Rank {
         this.name = name;
         this.gradient = gradient;
     }
+
+    public String getName() {
+        return name;
+    }
+
+    public boolean isGradient() {
+        return gradient;
+    }
 }
