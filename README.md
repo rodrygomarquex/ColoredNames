@@ -35,4 +35,61 @@ ColoredNames/
 ├─ docs/
 ├─ build.gradle
 ├─ mod.json
-└─ README.md  
+└─ README.md
+```
+## ⚙️ Requisitos
+
+- Java 17 ou superior
+- Gradle
+- SDK do Hytale (quando disponibilizado oficialmente)
+
+## 🧪 Desenvolvimento
+
+1. Clone o repositório: [ColoredNames](https://github.com/rodrygomarquex/ColoredNames)
+```text
+git clone https://github.com/rodrygomarquex/ColoredNames 
+```
+2. Abra o projeto no IntelliJ IDEA ou VS Code
+3. Aguarde/configure o SDK do Hytale
+4. Compile com Gradle:
+```text
+gradlew build
+```
+---
+
+## 📘 Documentação
+
+A documentação completa está disponível na Wiki do projeto, incluindo:
+
+- Comandos
+- Configurações
+- API pública
+- Sistema de ranks
+- Gradientes
+- Painel administrativo
+
+👉 Acesse: Wiki do GitHub
+
+---
+
+## 🤝 Contribuindo
+
+Contribuições são bem-vindas!
+- Abra uma Issue para bugs ou sugestões
+- Envie um Pull Request com melhorias
+- Siga o padrão descrito em [Guia de Contribuição](CONTRIBUTING.md)
+---
+
+## 📄 Licença
+
+Este projeto está licenciado sob a licença MIT.
+Veja o arquivo [LICENSE](LICENSE.md)
+ para mais detalhes.
+
+ ---
+
+ ## 👤 Autor
+
+Desenvolvido por: Nick-Hytale: Digaoo  
+Projeto independente para a comunidade Hytale.
+
