@@ -1,7 +1,9 @@
 package com.digaoo.colorednames;
 
-import com.digaoo.colorednames.utils.Logger;
 import com.digaoo.colorednames.api.HytalePlugin;
+import com.digaoo.colorednames.api.HytaleCommandAPI;
+import com.digaoo.colorednames.commands.CommandRegistrar;
+import com.digaoo.colorednames.utils.Logger;
 
 /**
  * Hytale-compatible plugin entrypoint.
@@ -18,6 +20,13 @@ public class ColoredNamesMod implements HytalePlugin {
 
     public static ColoredNamesMod getInstance() {
         return INSTANCE;
+    }
+
+    /**
+     * Define a API de comandos do Hytale
+     */
+    public void setCommandAPI(HytaleCommandAPI api) {
+        CommandRegistrar.setCommandAPI(api);
     }
 
     @Override
