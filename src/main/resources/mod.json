@@ -2,7 +2,7 @@
   "id": "colorednames",
   "name": "Colored Names",
   "version": "1.0.0",
-  "description": "Framework completo de nomes coloridos para Hytale",
-  "author": "Digaoo",
-  "entrypoint": "com.digaoo.colorednames.ColoredNamesMod"
+  "entrypoint": "com.digaoo.colorednames.ColoredNamesMod",
+  "description": "Permite nomes coloridos no chat",
+  "authors": ["Digaoo"]
 }
