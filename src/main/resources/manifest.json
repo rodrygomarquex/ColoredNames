@@ -2,7 +2,7 @@
   "Group": "Digaoo",
   "Name": "Colored Names",
   "id": "colorednames",
-  "version": "1.0.0",
+  "version": "1.0.0.01",
   "description": "Permite nomes coloridos no chat e nametags com cores personalizadas",
   "author": "Digaoo",
   "main": "com.digaoo.colorednames.ColoredNamesMod"
