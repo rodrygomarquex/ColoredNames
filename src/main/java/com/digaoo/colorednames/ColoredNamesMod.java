@@ -1,8 +1,11 @@
 package com.digaoo.colorednames;
 
+import com.digaoo.colorednames.commands.CommandRegistry;
+import com.digaoo.colorednames.utils.ConfigLoader;
+import com.digaoo.colorednames.utils.Logger;
+
 /**
- * Main mod class
- * Classe principal do mod
+ * Classe principal do mod ColoredNames
  */
 public class ColoredNamesMod {
 
@@ -12,17 +15,13 @@ public class ColoredNamesMod {
         instance = this;
     }
 
-    /**
-     * Called when the mod is loaded
-     * Chamado quando o mod é carregado
-     */
     public void onInitialize() {
-        System.out.println("[ColoredNames] Mod inicializado com sucesso");
+        Logger.info("Inicializando mod");
 
-        // Inicializações futuras:
-        // - Registrar eventos
-        // - Registrar comandos
-        // - Carregar configs
+        ConfigLoader.loadAll();
+        CommandRegistry.registerAll();
+
+        Logger.info("Mod carregado com sucesso");
     }
 
     public static ColoredNamesMod getInstance() {
