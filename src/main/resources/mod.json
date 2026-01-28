@@ -1,8 +1,0 @@
-{
-  "id": "colorednames",
-  "name": "Colored Names",
-  "version": "1.0.0",
-  "entrypoint": "com.digaoo.colorednames.ColoredNamesMod",
-  "description": "Permite nomes coloridos no chat",
-  "authors": ["Digaoo"]
-}
