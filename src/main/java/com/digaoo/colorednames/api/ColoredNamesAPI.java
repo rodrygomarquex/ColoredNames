@@ -1,28 +1,24 @@
 package com.digaoo.colorednames.api;
 
+import com.digaoo.colorednames.data.ColorStorage;
 import com.digaoo.colorednames.data.PlayerColorData;
+import com.digaoo.colorednames.data.PlayerDataManager;
 
-import java.util.HashMap;
-import java.util.Map;
-import java.util.UUID;
-
-/**
- * Public API for other mods
- * API pública para outros mods
- */
 public class ColoredNamesAPI {
 
-    private static final Map<UUID, PlayerColorData> dataMap = new HashMap<>();
-
-    public static void setColor(UUID playerId, String color) {
-        get(playerId).setColor(color);
+    public static void setColor(String playerName, String rank, String hexColor) {
+        PlayerColorData data = PlayerDataManager.getOrCreate(playerName, rank);
+        data.setColor(hexColor);
+        ColorStorage.set(playerName, data);
     }
 
-    public static void setGradient(UUID playerId, String gradient) {
-        get(playerId).setGradient(gradient);
+    public static void setGradient(String playerName, String rank, String gradientId) {
+        PlayerColorData data = PlayerDataManager.getOrCreate(playerName, rank);
+        data.setGradient(gradientId);
+        ColorStorage.set(playerName, data);
     }
 
-    public static PlayerColorData get(UUID playerId) {
-        return dataMap.computeIfAbsent(playerId, id -> new PlayerColorData("PLAYER"));
+    public static PlayerColorData getData(String playerName) {
+        return ColorStorage.get(playerName);
     }
 }

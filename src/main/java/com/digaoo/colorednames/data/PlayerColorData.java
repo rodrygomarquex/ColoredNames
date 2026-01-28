@@ -1,19 +1,23 @@
 package com.digaoo.colorednames.data;
 
-/**
- * Stores player color information
- * Armazena informações de cor do jogador
- */
 public class PlayerColorData {
 
+    private String playerName;
+    private String rank;
     private String color;
     private String gradient;
-    private String rank;
 
-    public PlayerColorData(String rank) {
+    public PlayerColorData(String playerName, String rank) {
+        this.playerName = playerName;
         this.rank = rank;
-        this.color = null;
-        this.gradient = null;
+    }
+
+    public String getPlayerName() {
+        return playerName;
+    }
+
+    public String getRank() {
+        return rank;
     }
 
     public String getColor() {
@@ -34,7 +38,11 @@ public class PlayerColorData {
         this.color = null;
     }
 
-    public String getRank() {
-        return rank;
+    public boolean hasColor() {
+        return color != null;
+    }
+
+    public boolean hasGradient() {
+        return gradient != null;
     }
 }
